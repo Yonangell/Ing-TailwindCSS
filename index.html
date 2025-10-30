@@ -18,57 +18,60 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
   </head>
-  <body class="min-h-screen flex flex-col justify-between bg-sky-500/[60.35%]">
+  <body
+    class="min-h-screen flex flex-col justify-between bg-sky-500/[60.35%] font-sans max-w-6xl mx-auto px-6 py-4" 
+  >
     <div>
-        <div id="header" class="max-w-6xl mx-auto px-6 py-4">
-      <header class="flex justify-between">
+        <header class="flex justify-between sticky top-0 bottom-0 w-full z-10 transition-all duration-300 bg-transparent">
           <h2
-            class="animate__animated animate__bounce text-3xl font-bold bg-linear-to-r from-gray-500 to-gray-400 bg-clip-text text-transparent"
+            class="animate__animated animate__pulse text-3xl font-bold bg-linear-to-r from-gray-600 to-gray-400 bg-clip-text text-transparent"
           >
             Yonangell Guillen
           </h2>
-          <nav
-            class="hidden md:flex gap-4 sticky z-10 transition-all duration-300 bg-transparent"
-          >
+          <nav class="hidden md:flex gap-4 animate__animated animate__pulse">
             <a
               href="#"
-              class="text-gray-600 hover:text-indigo-100 transition-colors text-lg"
+              class="text-gray-600 hover:text-indigo-100 transition-colors text-xl"
               >Proyectos</a
             >
             <a
               href="#"
-              class="text-gray-600 hover:text-indigo-100 transition-colors text-lg"
+              class="text-gray-600 hover:text-indigo-100 transition-colors text-xl"
               >Habilidades</a
             >
             <a
               href="#"
-              class="text-gray-600 hover:text-indigo-100 transition-colors text-lg"
+              class="text-gray-600 hover:text-indigo-100 transition-colors text-xl"
               >Contacto</a
             >
-            <button
-              class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors"
-            >
-              <span class="text-white w-4 h-4">
-                <i class="fa-solid fa-language"></i>
-                Es
-              </span>
-            </button>
-            <button
-              class="p-2 bg-slate-700 hover:bg-slate-600 rounded-lg transition-colors"
-            >
-              <span class="text-yellow-400">
-                <i class="fa-solid fa-sun fa-xl"></i>
-              </span>
-            </button>
           </nav>
-        <button class="md:hidden p-4">
-          <span class="text-white">
-            <i class="fa-solid fa-bars fa-xl"></i>
-          </span>
-        </button>
-      </header>
-      </div>
-      <main></main>
+          <button class="md:hidden p-4 cursor-pointer">
+            <span class="text-white">
+              <i class="fa-solid fa-bars fa-xl"></i>
+            </span>
+          </button>
+        </header>
+      <main class="flex  justify-center min-h-screen">
+        <div class="pt-8">
+        <section class="flex flex-col justify-center items-center gap-4">
+          <h1
+            class="relative text-5xl md:text-7xl font-bold text-white mb-2 animate__animated animate__wobble"
+          >
+            <span
+              class="inline md:inline-block bg-linear-to-r from-gray-600 to-gray-400 bg-clip-text text-transparent"
+            >
+              Web
+            </span>
+            <span
+              class="inline md-inline-block ml-2 bg-linear-to-r from-gray-600 to-gray-400 bg-clip-text text-transparent"
+            >
+              Develop
+            </span>
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet sit ipsum ducimus velit officiis rerum dignissimos quod optio vel? Molestias repellendus architecto perferendis assumenda quam earum nesciunt illo dolore quisquam.</p>
+        </section>
+        </div>
+      </main>
     </div>
     <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
