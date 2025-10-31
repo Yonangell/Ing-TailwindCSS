@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
+    <link rel="icon" type="image/x" href="assets/image/maleta.png">
   </head>
   <body
     class="min-h-screen flex flex-col justify-between bg-sky-500/[60.35%] font-sans"
@@ -33,7 +34,7 @@
         <nav class="hidden md:flex gap-4 animate__animated animate__pulse">
           <a
             href="#proyectos"
-            class="text-gray-600 hover:text-indigo-100 transition-colors text-xl"
+            class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
             >Proyectos</a
           >
           <a
@@ -90,9 +91,9 @@
           <section
             class="flex flex-col justify-center items-center pl-4 pr-4 pt-6 gap-2"
           >
-            <h1 class="text-5xl font-bold text-gray-600 mb-4" id="proyectos">
+            <h2 class="text-5xl font-bold text-gray-600 mb-4" id="proyectos">
               Mis Proyectos
-            </h1>
+            </h2>
             <p
               class="text-xl text-gray-600 mb-8 mx-auto leading-relaxed text-justify"
             >
@@ -109,37 +110,107 @@
               desafios técnicos.
             </p>
           </section>
-          <div class="flex flex-col justify-start items-start pl-4 pr-4 pb-2 gap-2">
-            <h2 class="text-xl font-bold text-gray-600 leading-relaxed">Proyectos</h2>
-              <ul >
-                <li class="text-gray-600 hover:text-indigo-100 transition-colors text-xl">
-                  <a href="http://ing-site.infinityfree.me/ " target="_blank"
-                    >Tienda virtual</a
-                  >
-                </li>
-                <li class="text-gray-600 hover:text-indigo-100 transition-colors text-xl">
-                  <a
-                    href="https://yonangell.github.io/Ing-CurriculumHarvard/"
-                    target="_blank"
-                    >Curriculum Harvard</a
-                  >
-                </li>
-                <li class="text-gray-600 hover:text-indigo-100 transition-colors text-xl">
-                  <a
-                    href="https://yonangell.github.io/Ing-MusicTube/"
-                    target="_blank"
-                    >Clon Youtube</a
-                  >
-                </li>
-                <li class="text-gray-600 hover:text-indigo-100 transition-colors text-xl">
-                  <a
-                    href="https://yonangell.github.io/Ing-sass/"
-                    target="_blank"
-                    >Clon Lexpin</a
-                  >
-                </li>
-              </ul>
+          <div
+            class="flex flex-col justify-start items-start pl-4 pr-4 pb-4 gap-2"
+          >
+            <h2 class="text-xl font-bold text-gray-600 leading-relaxed">
+              Proyectos
+            </h2>
+            <ul>
+              <li
+                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
+              >
+                <a href="http://ing-site.infinityfree.me/ " target="_blank"
+                  >Tienda virtual</a
+                >
+              </li>
+              <li
+                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
+              >
+                <a
+                  href="https://yonangell.github.io/Ing-CurriculumHarvard/"
+                  target="_blank"
+                  >Curriculum Harvard</a
+                >
+              </li>
+              <li
+                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
+              >
+                <a
+                  href="https://yonangell.github.io/Ing-MusicTube/"
+                  target="_blank"
+                  >Clon Youtube</a
+                >
+              </li>
+              <li
+                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
+              >
+                <a href="https://yonangell.github.io/Ing-sass/" target="_blank"
+                  >Clon Lexpin</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="max-w-6xl mx-auto pl-4 pr-4 pb-8">
+            <div class="text-center mb-12">
+              <h2 class="text-5xl font-bold text-gray-600 leading-relaxed mb-4">
+                Habilidades Técnicas
+              </h2>
             </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+              <div
+                class="bg-linear-to-br from-sky-600 to-sky-400 p-4 rounded-2xl border border-slate-700"
+              >
+                <div class="flex items-center gap-2 mb-4">
+                  <i class="fa-solid fa-globe fa-xl b"></i>
+                  </span>
+                  <h3 class="text-xl font-semibold text-white">Frontend</h3>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-base text-slate-300">Bootstrap</div>
+                  <div class="text-base text-slate-300">Tailwind CSS</div>
+                  <div class="text-base text-slate-300">WordPress</div>
+                </div>
+              </div>
+              <div
+                class="bg-linear-to-br from-sky-600 to-sky-400 p-4 rounded-2xl border border-slate-700"
+              >
+                <div class="flex items-center gap-2 mb-4">
+                  <i class="fa-solid fa-code fa-xl"></i>
+                  <h3 class="text-xl font-semibold text-white">Backend</h3>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-base text-slate-300">Java</div>
+                  <div class="text-base text-slate-300">JavaScript</div>
+                  <div class="text-base text-slate-300">PHP</div>
+                </div>
+              </div>
+              <div
+                class="bg-linear-to-br from-sky-600 to-sky-400 p-4 rounded-2xl border border-slate-700"
+              >
+                <div class="flex items-center gap-2 mb-4">
+                  <i class="fa-solid fa-database fa-xl"></i>
+                  <h3 class="text-xl font-semibold text-white">Base de Datos</h3>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-base text-slate-300">SQL</div>
+                  <div class="text-base text-slate-300">MYSQL</div>
+                </div>
+              </div>
+              <div
+                class="bg-linear-to-br from-sky-600 to-sky-400 p-4 rounded-2xl border border-slate-700"
+              >
+                <div class="flex items-center gap-2 mb-4">
+                  <i class="fa-solid fa-file-lines fa-xl"></i>
+                  <h3 class="text-xl font-semibold text-white">Herramientas</h3>
+                </div>
+                <div class="space-y-2">
+                  <div class="text-base text-slate-300">Git</div>
+                  <div class="text-base text-slate-300">Excel</div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </main>
     </div>
