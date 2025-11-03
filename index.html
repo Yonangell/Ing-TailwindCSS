@@ -24,48 +24,48 @@
   >
     <div>
       <header
-        class="flex justify-between sticky top-0 z-10 w-full mx-auto px-4 py-4 transition-all duration-300  border-b border-sky-600 bg-gray-600/[80.35%]"
+        class="flex justify-between sticky top-0 z-10 w-full mx-auto px-4 py-4 transition-all duration-300 border-b border-sky-600 bg-gray-600/[80.35%]"
       >
         <h2
-          class="animate__animated animate__pulse text-4xl font-bold text-white bg-linear-to-r  from-sky-900 to-sky-700 bg-clip-text"
+          class="animate__animated animate__pulse text-4xl font-bold text-white bg-linear-to-r from-sky-900 to-sky-700 bg-clip-text"
         >
           Yonangell Guillen
         </h2>
 
         <nav class="md:flex gap-4">
           <div
-            class="max-w-7xl flex flex-wrap items-center justify-between  p-2"
+            class="max-w-7xl flex flex-wrap items-center justify-between p-2"
           >
             <button
               data-collapse-toggle="navbar-default"
-              class="inline-flex items-center cursor-pointer p-2 w-8 h-8 justify-center text-base text-white md:hidden "
+              class="inline-flex items-center cursor-pointer p-2 w-8 h-8 justify-center text-base text-white md:hidden"
               aria-controls="navbar-default"
               aria-expanded="false"
             >
-                <i class="fa-solid fa-bars fa-xl"></i>
+              <i class="fa-solid fa-bars fa-xl"></i>
             </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul
-                class=" animate__animated animate__pulse font-bold text-xl flex flex-col p-2 md:p-0 mt-2  md:flex-row md:space-x-4 text-white"
+                class="animate__animated animate__pulse font-bold text-xl flex flex-col p-2 md:p-0 mt-2 md:flex-row md:space-x-4 text-white"
               >
                 <li>
                   <a
                     href="#proyectos"
-                    class="text-white hover:text-white-500 transition-colors  md:hover:bg-transparent md:border-0 hover:underline  dark:hover:text-sky-500 md:dark:hover:bg-transparen"
+                    class="text-white hover:text-white-500 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-sky-500 md:dark:hover:bg-transparen"
                     >Proyectos</a
                   >
                 </li>
                 <li>
                   <a
                     href="#habilidades"
-                    class="text-white hover:text-white-500 transition-colors  md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-sky-500 md:dark:hover:bg-transparent"
+                    class="text-white hover:text-white-500 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-sky-500 md:dark:hover:bg-transparent"
                     >Habilidades</a
                   >
                 </li>
                 <li>
                   <a
                     href="#contactos"
-                    class="text-white hover:text-white-500 transition-colors  md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-sky-500 md:dark:hover:bg-transparent"
+                    class="text-white hover:text-white-500 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-sky-500 md:dark:hover:bg-transparent"
                     >Contacto</a
                   >
                 </li>
@@ -142,45 +142,94 @@
             </p>
           </section>
           <div
-            class="flex flex-col justify-start items-start pl-4 pr-4 pb-8 pt-2 gap-2 bg-sky-500/[60.35%]"
+            class="grid grid-col-1  pl-4 pr-4 pb-8 pt-2 gap-2 max-w-7xl mx-auto object-cover bg-sky-500/[60.35%]"
           >
-            <h2 class="text-2xl font-bold text-gray-600 leading-relaxed">
-              Proyectos
-            </h2>
-            <ul>
-              <li
-                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
-              >
-                <a href="http://ing-site.infinityfree.me/ " target="_blank"
-                  >Tienda virtual</a
-                >
-              </li>
-              <li
-                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
-              >
-                <a
-                  href="https://yonangell.github.io/Ing-CurriculumHarvard/"
-                  target="_blank"
-                  >Curriculum Harvard</a
-                >
-              </li>
-              <li
-                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
-              >
-                <a
-                  href="https://yonangell.github.io/Ing-MusicTube/"
-                  target="_blank"
-                  >Clon Youtube</a
-                >
-              </li>
-              <li
-                class="text-gray-600 hover:text-indigo-100 transition-colors text-xl hover:underline"
-              >
-                <a href="https://yonangell.github.io/Ing-sass/" target="_blank"
-                  >Clon Lexpin</a
-                >
-              </li>
-            </ul>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/youtube.png" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Youtube
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/lexpin.jpg" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Lexpin
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/youtube.png" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Youtube
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/youtube.png" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Youtube
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/youtube.png" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Youtube
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+              <div class="group relative bg-linear-to-br from-slate-900 to-slate-800 rounded-2xl overflow-hidden border border-slate-700 hover:border-purple-500 transition-all duration-500 hover:scale-[1.02] hover:shadow-2xl hover:shadow-purple-500/20">
+                <div class="relative h-48 overflow-hidden">
+                  <img src="assets/image/youtube.png" alt="clon youtube" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                  <div class="absolute inset-0 bg-linear-to-t from-slate-900 via-transparent to-transparent opacity-60"></div>
+                </div>
+                <div class="p-6">
+                  <h3 class="text-xl font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
+                    Clon de Youtube
+                  </h3>
+                  <p class="text-slate-300 mb-4">
+
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="mx-auto pl-4 pr-4 pb-8 pt-8 bg-sky-500/[60.35%]">
             <div class="text-center mb-12">
@@ -308,7 +357,7 @@
       </main>
     </div>
     <footer
-      class="flex text-xl font-bold  w-full mx-auto py-8 px-6 sticky bottom-0 z-10 border-t border-sky-600 bg-gray-600/[80.35%] text-white"
+      class="flex text-xl font-bold w-full mx-auto py-8 px-6 sticky bottom-0 z-10 border-t border-sky-600 bg-gray-600/[80.35%] text-white"
     >
       <div class="max-w-6xl mx-auto text-center">
         <p>
