@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio Personal</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css"
       rel="stylesheet"
@@ -19,19 +20,21 @@
     />
     <link rel="icon" type="image/x" href="assets/image/maleta.png" />
   </head>
-  <body class="min-h-screen flex flex-col justify-betwee font-sans">
+  <body
+    class="min-h-screen flex flex-col justify-betwee font-sans dark:bg-gray-900"
+  >
     <div>
       <header
-        class="flex justify-between sticky top-0 z-10 w-full mx-auto px-4 py-4 transition-all duration-300 border-b border-slate-400 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+        class="flex justify-between sticky top-0 z-10 w-full mx-auto px-4 py-4 transition-all duration-300 border-b border-slate-400 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900 dark:border-gray-700"
       >
         <h2
-          class="animate__animated animate__pulse text-4xl font-bold text-slate-800"
+          class="animate__animated animate__pulse text-4xl font-bold text-slate-800 dark:text-white"
         >
           Yonangell Guillen
         </h2>
         <nav class="md:flex gap-4">
           <div
-            class="max-w-7xl flex flex-wrap items-center justify-between p-2"
+            class="max-w-7xl flex flex-wrap items-center justify-between p-2 gap-2"
           >
             <button
               data-collapse-toggle="navbar-default"
@@ -41,6 +44,34 @@
             >
               <i class="fa-solid fa-bars fa-xl"></i>
             </button>
+            <button
+              id="theme-toggle"
+              type="button"
+              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5"
+            >
+              <!-- Icono de Sol (para modo claro) - inicialmente visible -->
+              <svg
+                id="theme-toggle-light-icon"
+                class="w-5 h-5 hidden"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.457 4.907a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 011.414-1.414l.707.707zM10 18a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM3 10a1 1 0 01-1-1V8a1 1 0 112 0v1a1 1 0 01-1 1zm14 0a1 1 0 01-1-1V8a1 1 0 112 0v1a1 1 0 01-1 1zM4.907 14.543a1 1 0 010 1.414l-.707.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0z"
+                ></path>
+              </svg>
+              <!-- Icono de Luna (para modo oscuro) - inicialmente oculto -->
+              <svg
+                id="theme-toggle-dark-icon"
+                class="w-5 h-5"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"
+                ></path>
+              </svg>
+            </button>
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul
                 class="animate__animated animate__pulse font-bold text-xl flex flex-col p-2 md:p-0 mt-2 md:flex-row md:space-x-4 text-white"
@@ -48,21 +79,21 @@
                 <li>
                   <a
                     href="#proyectos"
-                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparen"
+                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparent dark:text-gray-300"
                     >Proyectos</a
                   >
                 </li>
                 <li>
                   <a
                     href="#habilidades"
-                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparent"
+                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparent dark:text-gray-300"
                     >Habilidades</a
                   >
                 </li>
                 <li>
                   <a
                     href="#contactos"
-                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparent"
+                    class="text-slate-800 hover:text-slate-700 transition-colors md:hover:bg-transparent md:border-0 hover:underline dark:hover:text-white md:dark:hover:bg-transparent dark:text-gray-300"
                     >Contacto</a
                   >
                 </li>
@@ -71,10 +102,10 @@
           </div>
         </nav>
       </header>
-      <main class="flex justify-center min-h-screen">
+      <main class="flex justify-center min-h-screen dark:bg-gray-900">
         <div>
           <div
-            class="flex flex-col justify-center items-center md:flex bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 pt-8 pb-8 pl-4 pr-4"
+            class="flex flex-col justify-center items-center md:flex bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 pt-8 pb-8 pl-4 pr-4 dark:bg-gray-900"
           >
             <img
               src="assets/image/graduacion.JPG"
@@ -82,30 +113,24 @@
               class="w-96 h-96 mask-radial-at-center mask-radial-from-70% mask-radial-to-80% shadow-lg hover:shadow-xl object-cover"
             />
             <div class="flex flex-col items-center justify-center pt-3">
-              <h2 class="text-2xl font-bold leading-tight text-slate-800 mt-2">
+              <h2
+                class="text-2xl font-bold leading-tight text-slate-800 mt-2 dark:text-white"
+              >
                 "Las estrellas no piden permiso para brillar"
               </h2>
             </div>
           </div>
           <section
-            class="flex flex-col justify-center items-center pt-8 pl-4 pr-4 pb-8 gap-2 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+            class="flex flex-col justify-center items-center pt-8 pl-4 pr-4 pb-8 gap-2 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900"
           >
             <h1
-              class="text-5xl font-bold mb-4 animate__animated animate__wobble text-center flex flex-col md:flex-row"
+              class="text-5xl font-bold text-slate-800 mb-4 dark:text-white animate__animated animate__wobble text-center lex flex-col md:flex-row"
+              id="proyectos"
             >
-              <span
-                class="bg-linear-to-br from-slate-900 to-slate-800 bg-clip-text text-transparent"
-              >
-                Web
-              </span>
-              <span
-                class="md:ml-2 bg-linear-to-br from-slate-900 to-slate-800 bg-clip-text text-transparent"
-              >
-                Develop
-              </span>
+              Web Develop
             </h1>
             <h2
-              class="text-3xl font-bold text-slate-800 leading-relaxed text-center"
+              class="text-3xl font-bold text-slate-800 leading-relaxed text-center dark:text-white"
             >
               Ingeniero de Sistemas|Futuro desarrollador Web Full Stack
             </h2>
@@ -122,9 +147,12 @@
             </p>
           </section>
           <section
-            class="flex flex-col justify-center items-center pl-4 pr-4 pt-8 pb-4 gap-2 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+            class="flex flex-col justify-center items-center pl-4 pr-4 pt-8 pb-4 gap-2 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900"
           >
-            <h2 class="text-4xl font-bold text-slate-800 mb-4" id="proyectos">
+            <h2
+              class="text-4xl font-bold text-slate-800 mb-4 dark:text-white"
+              id="proyectos"
+            >
               Mis Proyectos
             </h2>
             <p
@@ -440,11 +468,11 @@
             </div>
           </div>
           <div
-            class="mx-auto pl-4 pr-4 pb-8 pt-8 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+            class="mx-auto pl-4 pr-4 pb-8 pt-8 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900"
           >
             <div class="text-center mb-12">
               <h2
-                class="text-4xl font-bold text-slate-800 leading-relaxed mb-4"
+                class="text-4xl font-bold text-slate-800 leading-relaxed mb-4 dark:text-white"
                 id="habilidades"
               >
                 Habilidades Técnicas
@@ -509,11 +537,11 @@
             </div>
           </div>
           <section
-            class="pt-8 pl-4 pr-4 pb-8 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+            class="pt-8 pl-4 pr-4 pb-8 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900"
           >
             <div class="mx-auto text-center">
               <h2
-                class="text-4xl font-bold text-slate-800 leading-relaxed mb-4"
+                class="text-4xl font-bold text-slate-800 leading-relaxed mb-4 dark:text-white"
                 id="contactos"
               >
                 Muchas gracias por visitar mi portafolio
@@ -571,7 +599,7 @@
       </main>
     </div>
     <footer
-      class="flex text-xl font-bold w-full mx-auto py-8 px-6 sticky bottom-0 z-10 border-t border-slate-400 text-slate-800 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400"
+      class="flex text-xl font-bold w-full mx-auto py-8 px-6 sticky bottom-0 z-10 border-t border-slate-400 text-slate-800 bg-linear-to-b from-zinc-600 via-zinc-500 to-zinc-400 dark:bg-gray-900 dark:text-white dark:border-gray-700"
     >
       <div class="max-w-6xl mx-auto text-center">
         <p>
@@ -580,5 +608,6 @@
       </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
