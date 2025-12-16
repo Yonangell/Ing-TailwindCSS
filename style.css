@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+/* Modo oscuro personalizado */
+.dark body {
+  background-color: #111827; /* gray-900 */
+  color: white;
+}
+
+.dark header {
+  background: linear-gradient(
+    to bottom,
+    #374151,
+    #1f2937,
+    #111827
+  ); /* zinc-700 to gray-900 */
+  border-color: #374151; /* gray-700 */
+}
+
+.dark main {
+  background-color: #111827;
+}
+
+.dark section {
+  background: linear-gradient(to bottom, #374151, #1f2937, #111827);
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark a {
+  color: white;
+}
+
+.dark a:hover {
+  color: #d1d5db; /* gray-300 */
+}
+
+.dark footer {
+  background: linear-gradient(to bottom, #374151, #1f2937, #111827);
+  border-color: #374151;
+  color: white;
+}
+
+/* Override gradientes en modo oscuro */
+.dark [class*="bg-linear-to-b"] {
+  background: linear-gradient(to bottom, #374151, #1f2937, #111827) !important;
+}
+
+.dark [class*="bg-linear-to-br"] {
+  background: linear-gradient(
+    to bottom right,
+    #06b6d4,
+    #3b82f6
+  ) !important; /* cyan-500 to blue-500 */
+}
+
+.dark .bg-clip-text {
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6) !important;
+}
+
+.dark span.bg-clip-text.text-transparent {
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6) !important;
+}
