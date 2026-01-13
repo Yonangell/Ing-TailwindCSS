@@ -1,19 +1,14 @@
 @import "tailwindcss";
 
-/* Modo oscuro personalizado */
+/* 1. CONFIGURACIÓN BASE MODO OSCURO */
 .dark body {
   background-color: #111827; /* gray-900 */
   color: white;
 }
 
 .dark header {
-  background: linear-gradient(
-    to bottom,
-    #374151,
-    #1f2937,
-    #111827
-  ); /* zinc-700 to gray-900 */
-  border-color: #374151; /* gray-700 */
+  background: linear-gradient(to bottom, #374151, #1f2937, #111827);
+  border-color: #374151;
 }
 
 .dark main {
@@ -30,9 +25,10 @@
 .dark p,
 .dark a {
   color: white;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
+/* Color general para enlaces en modo oscuro (excepto títulos de proyectos) */
 .dark a:hover {
   color: #d1d5db; /* gray-300 */
 }
@@ -43,41 +39,36 @@
   color: white;
 }
 
+/* 2. LÓGICA DE INTERACCIÓN DE TARJETAS (H3) */
+
+/* Definición base para asegurar suavidad */
 h3 {
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 
-h3:hover, 
-a:hover h3 {
-  transform: translateX(8px);
-  cursor: pointer;
-}
-
-/* 2. Color en Hover - TEMA CLARO */
+/* HOVER TEMA CLARO: Al tocar cualquier parte de la tarjeta (a) */
 h3:hover, 
 a:hover h3 {
   color: #1e40af !important; /* Azul Cobalto Profundo */
+  transform: translateX(8px) !important;
+  cursor: pointer;
 }
 
-/* 3. Color en Hover - TEMA OSCURO */
-/* Usamos un azul más brillante (#3b82f6) para que no se pierda en el fondo negro */
+/* HOVER TEMA OSCURO: Al tocar cualquier parte de la tarjeta (a) */
+/* CAMBIO CLAVE: Se usa #3b82f6 (Azul brillante) para que resalte sobre el fondo negro */
 .dark h3:hover,
 .dark a:hover h3 {
-  color: #3b82f6 !important; 
+  color: #1e62cf !important; 
+  transform: translateX(8px) !important;
 }
 
-
-/* Override gradientes en modo oscuro */
+/* 3. OVERRIDE DE GRADIENTES EN MODO OSCURO */
 .dark [class*="bg-linear-to-b"] {
   background: linear-gradient(to bottom, #374151, #1f2937, #111827) !important;
 }
 
 .dark [class*="bg-linear-to-br"] {
-  background: linear-gradient(
-    to bottom right,
-    #06b6d4,
-    #3b82f6
-  ) !important; /* cyan-500 to blue-500 */
+  background: linear-gradient(to bottom right, #06b6d4, #3b82f6) !important;
 }
 
 .dark .bg-clip-text {
