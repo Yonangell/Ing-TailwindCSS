@@ -30,6 +30,7 @@
 .dark p,
 .dark a {
   color: white;
+  transition: color 0.3s ease;
 }
 
 .dark a:hover {
@@ -41,6 +42,30 @@
   border-color: #374151;
   color: white;
 }
+
+h3 {
+  transition: all 0.3s ease-in-out;
+}
+
+h3:hover, 
+a:hover h3 {
+  transform: translateX(8px);
+  cursor: pointer;
+}
+
+/* 2. Color en Hover - TEMA CLARO */
+h3:hover, 
+a:hover h3 {
+  color: #1e40af !important; /* Azul Cobalto Profundo */
+}
+
+/* 3. Color en Hover - TEMA OSCURO */
+/* Usamos un azul más brillante (#3b82f6) para que no se pierda en el fondo negro */
+.dark h3:hover,
+.dark a:hover h3 {
+  color: #3b82f6 !important; 
+}
+
 
 /* Override gradientes en modo oscuro */
 .dark [class*="bg-linear-to-b"] {
